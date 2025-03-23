@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2BB603F9-007B-E0BC-DBBC-5F3318C51093" name="programare">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 21:54:43 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_programare" id="07F89D85-B235-CE03-5655-9A2C3A048D09">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 21:54:58 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_programare" id="7207546F-466B-E79A-3BC0-64E9388DD2EE">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 21:56:03 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_programare" id="937B7F2D-DB7C-C579-B328-B1F60FDDF900">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 21:56:21 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<constraintName>programare_donare_stat_prog_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="status_programare IN (&apos;Programată&apos;, &apos;Finalizată&apos;, &apos;Anulată&apos;)"/>
+</checkConstraint>
+<defaultValue>Disponibilă</defaultValue>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_tip_donatie" id="E088F2A6-102C-1C25-76A0-94A379E1C7E0">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-10 22:35:23 UTC</createdTime>
+<generatorID>DFC53132-60C7-1811-97F4-FB371E047524</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<referedAttribute>5503F8BB-8AC2-6CFF-350F-FE161FC9D881</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_donator" id="DD594D6D-F8E5-49B6-CD46-BC3E0D4AF4B1">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-24 22:55:21 UTC</createdTime>
+<generatorID>304F82BE-6C89-B3FA-D6B1-62B6E55D3BA8</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<referedAttribute>AFF66B1F-4B07-5633-7438-629BD67807B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_campanie" id="6B89DAD6-E52F-F921-051B-4B91E7A59727">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-24 22:56:44 UTC</createdTime>
+<generatorID>6D6E9646-6D5F-91E8-A9E8-14B16F0E31A0</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<referedAttribute>7B3CB14C-453C-3CF7-EE71-2D4D37BD19E6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="208A4EA9-1F29-879B-B141-6EDC6F3901B8" name="programare_donare PK">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 21:55:18 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>07F89D85-B235-CE03-5655-9A2C3A048D09</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

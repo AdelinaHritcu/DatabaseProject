@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DFA7CCB1-C803-0E94-1C90-D42F08232500" name="feedback">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 21:59:02 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="218C9D72-FD3C-55DE-1F91-26AE6ABC0DA2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_feedback" id="87081ECD-AE94-9B71-E9D9-61E07A35BBB4">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 21:59:31 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="218C9D72-FD3C-55DE-1F91-26AE6ABC0DA2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comentariu" id="673EAA61-ABFA-1125-BB82-4AE63780BEF2">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 22:00:37 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="218C9D72-FD3C-55DE-1F91-26AE6ABC0DA2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nota" id="5BDA7E59-DC10-1691-C475-30477D1D96AE">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 22:00:57 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="218C9D72-FD3C-55DE-1F91-26AE6ABC0DA2" value="true"/>
+</engineerTo>
+<constraintName>feedback_nota_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nota &gt;= 1.0 AND nota &lt;= 5.0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,1</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_donator" id="9C2F8925-8D9B-E902-D49D-6EAE2A6797F1">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-24 22:54:18 UTC</createdTime>
+<generatorID>9162135D-3D14-9A6D-1137-70155C2472A4</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="218C9D72-FD3C-55DE-1F91-26AE6ABC0DA2" value="true"/>
+</engineerTo>
+<referedAttribute>AFF66B1F-4B07-5633-7438-629BD67807B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_campanie" id="4F8AC2C1-0511-09F4-4009-9D4097AC453D">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-24 22:55:45 UTC</createdTime>
+<generatorID>D6058271-01DC-60CF-F097-6CD9CE5A2753</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="218C9D72-FD3C-55DE-1F91-26AE6ABC0DA2" value="true"/>
+</engineerTo>
+<referedAttribute>7B3CB14C-453C-3CF7-EE71-2D4D37BD19E6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="39969FC7-B5F7-86EF-8C59-5ED9ACB3D432" name="feedback PK">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 21:59:49 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="218C9D72-FD3C-55DE-1F91-26AE6ABC0DA2" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>87081ECD-AE94-9B71-E9D9-61E07A35BBB4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

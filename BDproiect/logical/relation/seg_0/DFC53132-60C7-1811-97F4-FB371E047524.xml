@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tip_donatie_programare_fk" directorySegmentName="seg_0" id="DFC53132-60C7-1811-97F4-FB371E047524">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-10 22:35:23 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="218C9D72-FD3C-55DE-1F91-26AE6ABC0DA2" value="true"/>
+</engineerTo>
+<sourcePk>61B40AE3-6BDE-DFD0-DCAD-6071F229BBF6</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>apare</nameOnSource>
+<nameOnTarget>este pentru</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>ADC35237-4636-2F0E-E34A-CF62E2461EFD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2BB603F9-007B-E0BC-DBBC-5F3318C51093</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EC1F87F2-CC29-5496-2D00-4653641CE4AC" name="tip_donatie">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>ADC35237-4636-2F0E-E34A-CF62E2461EFD</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_tip_donatie" id="47E9B52F-5F08-04A9-12C0-9263C61CD8C6">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>5503F8BB-8AC2-6CFF-350F-FE161FC9D881</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>100</autoIncrementStartWith>
+<autoIncrementIncrementBy>10</autoIncrementIncrementBy>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_donatie" id="FDC5ADC0-D752-2345-B821-E3D2C43C3E2C">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>BC3F566A-B873-70D9-F1B6-351D8F4DFAA9</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descriere" id="974BA233-B00E-B96B-AB6F-9F0DE8AEADFC">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>82C666E7-1338-D2CE-FEDA-CE8FEB85F0B8</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="criterii_eligibilitate" id="B8CFB3CF-42CE-7B9E-E5FF-FCF445C40F8F">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>FBBF4504-48F1-E7CF-5F9D-979B24216EED</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D74155D8-8973-C902-970D-D6C667071802" name="tip_donatie_PK">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>61B40AE3-6BDE-DFD0-DCAD-6071F229BBF6</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47E9B52F-5F08-04A9-12C0-9263C61CD8C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CF4774D-E1D3-2116-626C-62445D6C3C92" name="tip_donatie_tip_donatie_uk">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>5BCEA69D-FBC8-8E67-06B7-B59F2A0F932B</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDC5ADC0-D752-2345-B821-E3D2C43C3E2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

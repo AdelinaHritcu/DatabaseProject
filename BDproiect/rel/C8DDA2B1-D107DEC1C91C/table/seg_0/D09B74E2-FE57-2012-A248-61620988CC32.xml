@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D09B74E2-FE57-2012-A248-61620988CC32" name="feedback">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>DFA7CCB1-C803-0E94-1C90-D42F08232500</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_feedback" id="28C1571B-5A5C-6EA1-85A7-BE6D236A5177">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>87081ECD-AE94-9B71-E9D9-61E07A35BBB4</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>500</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comentariu" id="CD8D974C-77A1-BB2B-1E08-649773DF4575">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>673EAA61-ABFA-1125-BB82-4AE63780BEF2</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nota" id="9C09B0C7-9C51-81D5-A6CB-EBE151740924">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>5BDA7E59-DC10-1691-C475-30477D1D96AE</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<constraintName>feedback_nota_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="nota &gt;= 1.0 AND nota &lt;= 5.0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_donator" id="450E57FB-9466-F8D7-C3AC-ABEBAAAB80BA">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>9C2F8925-8D9B-E902-D49D-6EAE2A6797F1</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F2F8CA6-ECED-502E-E928-4AB0A26EB570" referredColumn="CFCDFB4B-6765-67AF-E418-A5F4447A9421"/>
+</associations>
+</Column>
+<Column name="ID_campanie" id="BD1DBCCF-BC69-26D5-A6C5-D6DB2E41E90B">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>4F8AC2C1-0511-09F4-4009-9D4097AC453D</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37EB7CF7-DBAC-469A-1E45-889461CDAE68" referredColumn="3DA06A2E-A0F6-D508-BADF-19084642AC06"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BE9D1453-B04A-2389-D9BC-3DB1D8E03843" name="feedback_PK">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>39969FC7-B5F7-86EF-8C59-5ED9ACB3D432</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28C1571B-5A5C-6EA1-85A7-BE6D236A5177"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="573D2990-7864-C986-7C0E-67E24E1588ED" name="camp_feedback_fk">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>D6058271-01DC-60CF-F097-6CD9CE5A2753</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD1DBCCF-BC69-26D5-A6C5-D6DB2E41E90B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E6C60F1-A4AA-C2AE-224A-52F5F060EEC8" name="don_feedback_fk">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>9162135D-3D14-9A6D-1137-70155C2472A4</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="450E57FB-9466-F8D7-C3AC-ABEBAAAB80BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

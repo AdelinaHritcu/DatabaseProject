@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_campanie_donare" directorySegmentName="seg_0" id="E48E08B3-3BF3-0AF4-4ED3-46D54D63EECF">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 17:08:56 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+IF( :new.data < SYSDATE )
+THEN
+RAISE_APPLICATION_ERROR( -20001,
+'Data invalida: ' || TO_CHAR( :new.data, 'DD.MM.YYYY HH24:MI:SS' ) || ' trebuie sa fie mai mare decat data curenta.' );
+END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>57D39E32-2B53-EBF9-E60A-A6834410A373</table>
+</TriggerOraclev10g>

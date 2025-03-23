@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="programare" directorySegmentName="seg_0" id="EF02C46D-99AD-7912-2ED3-EC436E5FA1C1">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="status_programare" id="1C76A588-48BA-A6C9-B327-851A58EDA637">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<defaultValue>Disponibilă</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ID_campanie" id="505EC7DA-F3EB-E977-5355-14725C4122A4">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_programare" id="99BD1696-4339-DFF5-B6A0-6D0FE8D4FA56">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="data_programare" id="B49FDE15-AFEF-38C4-70C4-F939A772AF6B">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_tip_donatie" id="BC082D18-3EEF-EC85-7507-B8D7F289423E">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_donator" id="F749F7A4-5DB4-38C8-3B2C-5E648E1EE54B">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="camp_prog_fk" id="7915913A-E93B-961C-BEF1-D3E16A68141C">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="tip_donatie_programare_fk" id="9B2CA3C0-7609-AE0E-5997-65BC6172AF77">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="don_prog_fk" id="DFBAC35D-BFFA-B3ED-A891-56F71E4390A7">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="programare_donare_PK" id="22F5FF8E-5C79-2E93-C600-4DBAD9EE7570">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

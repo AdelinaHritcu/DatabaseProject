@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EF02C46D-99AD-7912-2ED3-EC436E5FA1C1" name="programare">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>2BB603F9-007B-E0BC-DBBC-5F3318C51093</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_programare" id="99BD1696-4339-DFF5-B6A0-6D0FE8D4FA56">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>07F89D85-B235-CE03-5655-9A2C3A048D09</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>10</autoIncrementStartWith>
+<autoIncrementIncrementBy>10</autoIncrementIncrementBy>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_programare" id="B49FDE15-AFEF-38C4-70C4-F939A772AF6B">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>7207546F-466B-E79A-3BC0-64E9388DD2EE</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_programare" id="1C76A588-48BA-A6C9-B327-851A58EDA637">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>937B7F2D-DB7C-C579-B328-B1F60FDDF900</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<constraintName>programare_donare_stat_prog_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="status_programare IN (&apos;Programată&apos;, &apos;Finalizată&apos;, &apos;Anulată&apos;)"/>
+</checkConstraint>
+<defaultValue>Disponibilă</defaultValue>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_tip_donatie" id="BC082D18-3EEF-EC85-7507-B8D7F289423E">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>E088F2A6-102C-1C25-76A0-94A379E1C7E0</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BDADB5B9-F679-8347-434F-986A5C930506" referredColumn="47E9B52F-5F08-04A9-12C0-9263C61CD8C6"/>
+</associations>
+</Column>
+<Column name="ID_donator" id="F749F7A4-5DB4-38C8-3B2C-5E648E1EE54B">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>DD594D6D-F8E5-49B6-CD46-BC3E0D4AF4B1</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="45FEC3CC-DF6D-24A4-0C4C-D51DBA36A3F0" referredColumn="CFCDFB4B-6765-67AF-E418-A5F4447A9421"/>
+</associations>
+</Column>
+<Column name="ID_campanie" id="505EC7DA-F3EB-E977-5355-14725C4122A4">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>6B89DAD6-E52F-F921-051B-4B91E7A59727</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FF214E8C-94AE-D62F-DE93-9D5E43952E4E" referredColumn="3DA06A2E-A0F6-D508-BADF-19084642AC06"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22F5FF8E-5C79-2E93-C600-4DBAD9EE7570" name="programare_donare_PK">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>208A4EA9-1F29-879B-B141-6EDC6F3901B8</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99BD1696-4339-DFF5-B6A0-6D0FE8D4FA56"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7915913A-E93B-961C-BEF1-D3E16A68141C" name="camp_prog_fk">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>6D6E9646-6D5F-91E8-A9E8-14B16F0E31A0</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="505EC7DA-F3EB-E977-5355-14725C4122A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFBAC35D-BFFA-B3ED-A891-56F71E4390A7" name="don_prog_fk">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>304F82BE-6C89-B3FA-D6B1-62B6E55D3BA8</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F749F7A4-5DB4-38C8-3B2C-5E648E1EE54B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B2CA3C0-7609-AE0E-5997-65BC6172AF77" name="tip_donatie_programare_fk">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>DFC53132-60C7-1811-97F4-FB371E047524</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC082D18-3EEF-EC85-7507-B8D7F289423E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

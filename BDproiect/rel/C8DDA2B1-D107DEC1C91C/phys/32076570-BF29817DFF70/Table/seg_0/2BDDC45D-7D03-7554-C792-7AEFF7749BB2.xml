@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="locatie" directorySegmentName="seg_0" id="2BDDC45D-7D03-7554-C792-7AEFF7749BB2">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="denumire" id="136B5E07-BCC0-77CA-D018-033E822F56D8">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="coordonate_geografice" id="20DE7D04-06D8-B3CE-F3BB-269FA540C0A2">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_locatie" id="80963F49-3069-9D84-FB1F-4D1FC787261A">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="adresa" id="EB8041B0-BA3C-2505-FAEB-15040AF50A8C">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="locatie_PK" id="1BE16AAF-BCDA-5D96-D350-617D3153BFAB">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

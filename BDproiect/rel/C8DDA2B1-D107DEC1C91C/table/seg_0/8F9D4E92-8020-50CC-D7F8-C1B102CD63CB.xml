@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F9D4E92-8020-50CC-D7F8-C1B102CD63CB" name="donator">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>8F481D8B-CACD-51C8-367E-517111C23DD0</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_donator" id="CFCDFB4B-6765-67AF-E418-A5F4447A9421">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>AFF66B1F-4B07-5633-7438-629BD67807B5</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume" id="3C3E3BAA-A6CD-A38F-B4A0-42CBFBDD8C44">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>48F28B65-A026-297A-692C-01379144CB94</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="350B25D5-DDD7-7541-B0C4-F6B889293F36">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>3A2D325A-A652-4A01-3F9C-AA33A4855827</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<constraintName>donator_email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email,&apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numar_CI" id="85B9A7A8-648A-5F1D-09FE-255CDBDCB181">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>C1AF8B0A-B7C0-0612-F854-8B03D98B193E</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<constraintName>donator_numarCI_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(numar_CI, &apos;^[0-9]{1,6}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9160742E-95E9-573B-C5D3-6DB915E7801E" name="donator_ID_donator_pk">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>14F00D1C-98D6-5DC1-0882-73A985D87019</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFCDFB4B-6765-67AF-E418-A5F4447A9421"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C29C62EC-7E56-2963-D5F3-FA7E4322B3A7" name="donator_email_uk">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>470FC948-B3D9-BEC5-DF76-77E545EBBACD</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="350B25D5-DDD7-7541-B0C4-F6B889293F36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A427938-7C32-9057-9BE4-AD1159542C94" name="donator_numar_CI_uk">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>4A056A9A-CBB9-4C8E-954F-1AB22CB57553</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85B9A7A8-648A-5F1D-09FE-255CDBDCB181"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

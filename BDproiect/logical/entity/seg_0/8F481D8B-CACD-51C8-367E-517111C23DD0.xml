@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8F481D8B-CACD-51C8-367E-517111C23DD0" name="donator">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 21:26:14 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_donator" id="AFF66B1F-4B07-5633-7438-629BD67807B5">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-24 22:16:25 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="48F28B65-A026-297A-692C-01379144CB94">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 21:27:04 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="3A2D325A-A652-4A01-3F9C-AA33A4855827">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 21:30:39 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<constraintName>donator_email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email,&apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numar_CI" id="C1AF8B0A-B7C0-0612-F854-8B03D98B193E">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 21:33:31 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<constraintName>donator_numarCI_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(numar_CI, &apos;^[0-9]{1,6}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="14F00D1C-98D6-5DC1-0882-73A985D87019" name="donator_ID_donator_pk">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 21:26:58 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>21AE508E-547A-B70F-957A-29B5E560D28B,39CBB443-DF18-3801-6348-706A283C8B73,D731D739-13B4-3682-DD20-49307E1BE0E4,AFF66B1F-4B07-5633-7438-629BD67807B5</newElementsIDs>
+<usedAttributes>
+<attributeRef>AFF66B1F-4B07-5633-7438-629BD67807B5</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="470FC948-B3D9-BEC5-DF76-77E545EBBACD" name="donator_email_uk">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 23:27:11 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<newElementsIDs>3A2D325A-A652-4A01-3F9C-AA33A4855827</newElementsIDs>
+<usedAttributes>
+<attributeRef>3A2D325A-A652-4A01-3F9C-AA33A4855827</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="4A056A9A-CBB9-4C8E-954F-1AB22CB57553" name="donator_numar_CI_uk">
+<createdBy>40746</createdBy>
+<createdTime>2024-10-27 23:28:12 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<newElementsIDs>C1AF8B0A-B7C0-0612-F854-8B03D98B193E</newElementsIDs>
+<usedAttributes>
+<attributeRef>C1AF8B0A-B7C0-0612-F854-8B03D98B193E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

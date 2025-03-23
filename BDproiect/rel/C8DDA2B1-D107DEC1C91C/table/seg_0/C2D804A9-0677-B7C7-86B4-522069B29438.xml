@@ -1,0 +1,227 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C2D804A9-0677-B7C7-86B4-522069B29438" name="detalii_donator">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>A9A66224-2D76-E7AF-DC2D-EF927BBE2F39</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="adresa" id="8CD5E996-C2B6-93BF-8320-4B545D938BE5">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>3F2B25B8-30CC-8437-1982-63EE74A94171</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_nasterii" id="69412FA7-85B7-F79A-2BC7-871086A813A2">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>BA4B04BA-F3D2-E6D6-6119-F7772436DAEF</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="greutate" id="CC0B6081-42AD-FF9D-01F7-EB63D28FD55A">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>96921DCD-86AC-FFA4-64DE-BEAB883ABCD9</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<constraintName>detalii_donator_greutate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="greutate BETWEEN 50 AND 120"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="inaltime" id="5956FD21-CD55-B0C6-ABF0-D433A12FB117">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>2077B1FF-5BBD-60C6-2B8F-667B761C528D</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="judet" id="88BB6A1F-EC5B-C39E-0610-49DF47CF52DC">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>B9EA9F63-D315-D95E-63BE-15C5E87D2966</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<constraintName>detalii_donator_judet_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(judet, &apos;^[A-Za-z]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oras" id="2635A9A8-ACBE-1A53-2BCD-CBC1890815F6">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>904B50E7-D659-E10C-B853-8A45C90073A8</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<constraintName>detalii_donator_oras_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(oras, &apos;^[A-Za-z]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gen" id="84C48351-8917-8AD6-8030-046BB1E1B53D">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>D36D6F48-9438-6FEA-094A-6BA9CFBD9D1C</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<constraintName>detalii_donator_gen_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="gen IN (&apos;M&apos;, &apos;F&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefon" id="0FE2DBA6-F527-96F5-E24B-6B0F56C25219">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>CD07EA91-8DA6-EE5B-7B85-196227E7A3EB</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<constraintName>detalii_donator_tel_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(telefon, &apos;^[0-9]{10}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_donator" id="3B01FAF7-6952-B3AE-8947-34D30E4A63F3">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>76B68F07-E91A-D102-B753-37993E5DE61B</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2EFF53A1-B6D3-B709-E28F-F6703908E4B0" referredColumn="CFCDFB4B-6765-67AF-E418-A5F4447A9421"/>
+</associations>
+</Column>
+<Column name="serie" id="11FA1E9C-107C-0955-BEF6-5914F791E47C">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>7B28028C-17B3-6B49-46D8-82B15B6AD4EF</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<constraintName>detalii_donator_serie_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition=" length(serie) = 2     AND (         (lower(judet) = &apos;iasi&apos; AND serie IN (&apos;MX&apos;, &apos;MZ&apos;))         OR (lower(judet) = &apos;botosani&apos; AND serie IN (&apos;XT&apos;, &apos;ZT&apos;))         OR (lower(judet) NOT IN (&apos;iasi&apos;, &apos;botosani&apos;))     )"/>
+</checkConstraint>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="grupa_sanguina" id="4031D3B2-803C-B5A6-D79B-3F6F02278F4E">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>9E8E2C08-10C1-1445-46B2-B287CDEB6331</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="0" description=""/>
+<valueDef value="A" description=""/>
+<valueDef value="AB" description=""/>
+<valueDef value="B" description=""/>
+</listOfValues>
+<defaultValue>A</defaultValue>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_ultimei_donatii" id="E4FA0D76-BEAD-E48E-AE79-CD091D54F457">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>8C22AC05-F0B9-6F6E-F15C-5B7D3F55B81F</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D4586FC5-63DB-90DA-682E-5D316A70D6FE" name="detalii_donator_PK">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>D1BFC755-AA8B-4524-F92E-E723958F450C</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B01FAF7-6952-B3AE-8947-34D30E4A63F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60C74538-3CE8-9774-CDC0-70AEAD00D7AB" name="detalii_donator_telefon_uk">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>F559884C-DDC4-2931-ACC3-F4606A71446B</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FE2DBA6-F527-96F5-E24B-6B0F56C25219"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0867A15-8D79-0911-A3F2-2E62A3CA19B4" name="don_det_don_fk">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:42 UTC</createdTime>
+<generatorID>0C70E753-42A0-40B0-00CA-B621BA649CD5</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B01FAF7-6952-B3AE-8947-34D30E4A63F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

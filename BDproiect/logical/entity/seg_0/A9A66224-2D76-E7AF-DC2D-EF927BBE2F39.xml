@@ -1,0 +1,251 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A9A66224-2D76-E7AF-DC2D-EF927BBE2F39" name="detalii_donator">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-10 20:24:47 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="adresa" id="3F2B25B8-30CC-8437-1982-63EE74A94171">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-10 20:25:01 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_nasterii" id="BA4B04BA-F3D2-E6D6-6119-F7772436DAEF">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-10 20:30:27 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="greutate" id="96921DCD-86AC-FFA4-64DE-BEAB883ABCD9">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-10 20:30:05 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<constraintName>detalii_donator_greutate_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="greutate BETWEEN 50 AND 120"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="inaltime" id="2077B1FF-5BBD-60C6-2B8F-667B761C528D">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-10 20:29:47 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="judet" id="B9EA9F63-D315-D95E-63BE-15C5E87D2966">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-10 20:27:50 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<constraintName>detalii_donator_judet_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(judet, &apos;^[A-Za-z]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oras" id="904B50E7-D659-E10C-B853-8A45C90073A8">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-10 20:27:24 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<constraintName>detalii_donator_oras_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(oras, &apos;^[A-Za-z]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gen" id="D36D6F48-9438-6FEA-094A-6BA9CFBD9D1C">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-10 20:29:26 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<constraintName>detalii_donator_gen_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="gen IN (&apos;M&apos;, &apos;F&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefon" id="CD07EA91-8DA6-EE5B-7B85-196227E7A3EB">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-10 20:28:02 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<constraintName>detalii_donator_tel_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(telefon, &apos;^[0-9]{10}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_donator" id="76B68F07-E91A-D102-B753-37993E5DE61B">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-24 23:13:26 UTC</createdTime>
+<generatorID>0C70E753-42A0-40B0-00CA-B621BA649CD5</generatorID>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<referedAttribute>AFF66B1F-4B07-5633-7438-629BD67807B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="serie" id="7B28028C-17B3-6B49-46D8-82B15B6AD4EF">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:28:56 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<constraintName>detalii_donator_serie_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition=" length(serie) = 2
+    AND (
+        (lower(judet) = &apos;iasi&apos; AND serie IN (&apos;MX&apos;, &apos;MZ&apos;))
+        OR (lower(judet) = &apos;botosani&apos; AND serie IN (&apos;XT&apos;, &apos;ZT&apos;))
+        OR (lower(judet) NOT IN (&apos;iasi&apos;, &apos;botosani&apos;))
+    )"/>
+</checkConstraint>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="grupa_sanguina" id="9E8E2C08-10C1-1445-46B2-B287CDEB6331">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:31:29 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="0" description=""/>
+<valueDef value="A" description=""/>
+<valueDef value="AB" description=""/>
+<valueDef value="B" description=""/>
+</listOfValues>
+<defaultValue>A</defaultValue>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_ultimei_donatii" id="8C22AC05-F0B9-6F6E-F15C-5B7D3F55B81F">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:32:59 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D1BFC755-AA8B-4524-F92E-E723958F450C" name="detalii_donator PK">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-10 20:32:00 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>76B68F07-E91A-D102-B753-37993E5DE61B</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F559884C-DDC4-2931-ACC3-F4606A71446B" name="detalii_donator_telefon_uk">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 15:01:28 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<newElementsIDs>CD07EA91-8DA6-EE5B-7B85-196227E7A3EB</newElementsIDs>
+<usedAttributes>
+<attributeRef>CD07EA91-8DA6-EE5B-7B85-196227E7A3EB</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="CBFA6E8B-EC62-B036-1C70-6FA94D9B2626" name="detalii_donator_serie_uk">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:33:33 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="C8DDA2B1-E07F-1A16-7AAF-D107DEC1C91C" value="true"/>
+</engineerTo>
+<newElementsIDs>7B28028C-17B3-6B49-46D8-82B15B6AD4EF</newElementsIDs>
+<usedAttributes>
+<attributeRef>7B28028C-17B3-6B49-46D8-82B15B6AD4EF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

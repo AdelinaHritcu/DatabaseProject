@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="locatie_campanie_donare_fk" directorySegmentName="seg_0" id="2DB60EF9-8F90-7CEE-58B4-B4A5A12886CF">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-10 22:22:18 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="218C9D72-FD3C-55DE-1F91-26AE6ABC0DA2" value="true"/>
+</engineerTo>
+<sourcePk>BEFCDAD5-6B9E-0B09-73A4-946D4F1BC988</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>gazduieste</nameOnSource>
+<nameOnTarget>se desfasoara</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E76A7531-08A7-0568-94C9-D928B2DFFBF7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>70D4D8FA-2785-05DF-DD96-CCB90D1707EC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

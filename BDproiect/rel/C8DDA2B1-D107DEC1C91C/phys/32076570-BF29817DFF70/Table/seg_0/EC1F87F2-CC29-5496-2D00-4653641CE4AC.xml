@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="tip_donatie" directorySegmentName="seg_0" id="EC1F87F2-CC29-5496-2D00-4653641CE4AC">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_tip_donatie" id="47E9B52F-5F08-04A9-12C0-9263C61CD8C6">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="descriere" id="974BA233-B00E-B96B-AB6F-9F0DE8AEADFC">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="criterii_eligibilitate" id="B8CFB3CF-42CE-7B9E-E5FF-FCF445C40F8F">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="tip_donatie" id="FDC5ADC0-D752-2345-B821-E3D2C43C3E2C">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="tip_donatie_PK" id="D74155D8-8973-C902-970D-D6C667071802">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="tip_donatie_tip_donatie_uk" id="7CF4774D-E1D3-2116-626C-62445D6C3C92">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 16:34:53 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="don_feedback_fk" directorySegmentName="seg_0" id="9162135D-3D14-9A6D-1137-70155C2472A4">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-24 22:54:18 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="218C9D72-FD3C-55DE-1F91-26AE6ABC0DA2" value="true"/>
+</engineerTo>
+<sourcePk>14F00D1C-98D6-5DC1-0882-73A985D87019</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>ofera</nameOnSource>
+<nameOnTarget>este primit</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8F481D8B-CACD-51C8-367E-517111C23DD0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DFA7CCB1-C803-0E94-1C90-D42F08232500</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

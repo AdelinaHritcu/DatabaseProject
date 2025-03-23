@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="camp_feedback_fk" directorySegmentName="seg_0" id="D6058271-01DC-60CF-F097-6CD9CE5A2753">
+<createdBy>40746</createdBy>
+<createdTime>2024-11-24 22:55:45 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<engineerTo>
+<item key="218C9D72-FD3C-55DE-1F91-26AE6ABC0DA2" value="true"/>
+</engineerTo>
+<sourcePk>AD6E88A7-1814-631E-5B8F-60D5E7611EAD</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>este oferit</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>70D4D8FA-2785-05DF-DD96-CCB90D1707EC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DFA7CCB1-C803-0E94-1C90-D42F08232500</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

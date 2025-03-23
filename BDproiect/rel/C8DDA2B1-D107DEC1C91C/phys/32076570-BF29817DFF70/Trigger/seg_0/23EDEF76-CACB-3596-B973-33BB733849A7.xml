@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_data_programare" directorySegmentName="seg_0" id="23EDEF76-CACB-3596-B973-33BB733849A7">
+<createdBy>40746</createdBy>
+<createdTime>2025-01-04 17:03:17 UTC</createdTime>
+<ownerDesignName>BDproiect</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+    -- Verifică dacă status_programare este 'Disponibila'
+    IF :new.status_programare = 'Disponibila' THEN
+        -- În acest caz, data_programare trebuie să fie mai mare decât SYSDATE
+        IF :new.data_programare <= SYSDATE THEN
+            RAISE_APPLICATION_ERROR( -20001,
+                'Data invalida: ' || TO_CHAR( :new.data_programare, 'DD.MM.YYYY HH24:MI:SS' ) || 
+                ' trebuie sa fie mai mare decat data curenta.' );
+        END IF;
+    -- Verifică dacă status_programare este 'Finalizata'
+    ELSIF :new.status_programare = 'Finalizata' THEN
+        -- În acest caz, nu facem nicio verificare suplimentară pentru data_programare
+        NULL;
+    END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>EF02C46D-99AD-7912-2ED3-EC436E5FA1C1</table>
+</TriggerOraclev10g>
